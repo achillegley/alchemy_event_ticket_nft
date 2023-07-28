@@ -99,7 +99,7 @@ export const loadBuyerTickets= async (contract_address:string, owner_address:str
       contractAddresses: contractAddresses,
       omitMetadata: false
     };
-    let response = await alchemy.nft.getNftsForOwner(ethers.getAddress(owner_address.toLowerCase()))
+    let response = await alchemy.nft.getNftsForOwner(ethers.getAddress(owner_address.toLowerCase()), options)
     return response;
   } catch (error) {
     console.error('Error sending transaction:', error);
