@@ -1,0 +1,3 @@
+
+REACT_APP_ALCHEMY_SEPOLIA_API_KEY="your private alchemy private key"
+REACT_APP_SEPOLIA_PRIVATE_KEY="your accont private key"
