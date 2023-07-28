@@ -92,6 +92,7 @@ export  function CheckTicket() {
        console.log("the event contract ", eventContract.toString());
        console.log("the owner address ", ownerAddress.toString());
         const currentUris= await loadBuyerTickets(eventContract, ownerAddress)
+        console.log("the current uris === ", currentUris);
         if(currentUris?.ownedNfts!?.length>0)
         {
           await Promise.all(
